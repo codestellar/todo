@@ -1,8 +1,8 @@
 # AWS Workshop Day 1
 
-* Create a static ip
-* Download the .pem based SSH Key
-* Get the launch script (This is optional)
+1. Create a static ip
+2. Download the .pem based SSH Key
+3. Get the launch script (This is optional)
 
 ````shell
 #! /bin/bash
@@ -21,9 +21,9 @@ DB_URL=mongodb://tasks:tasks@localhost:27017/?authMechanism=SCRAM-SHA-1&authSour
 EOF
 ````
 
-* Create a MEAN stack based machine
-* Convert the .pem to .ppk using putty in WINDOWS
-* Add Mongo User
+4. Create a MEAN stack based machine
+5. Convert the .pem to .ppk using putty in WINDOWS
+6. Add Mongo User
 
 ````shell
 mongo admin --username root -p $(cat ./bitnami_application_password)  
@@ -42,10 +42,12 @@ db.createUser(
 exit
 ````
 
-* Goto application 
+7. Goto application 
 
 ````shell
 cd ~/todo
 // Execute
 sudo DEBUG=app:* ./bin/www
 ````
+
+[AWS Lightsail - Session 2](lightsail-session-2.md)
